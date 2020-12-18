@@ -17,15 +17,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        reg_button_join_us = findViewById(R.id.reg_button_join_us);
-        reg_result_et    = findViewById(R.id.reg_result_et);
-        reg_num_et     = findViewById(R.id.reg_num_et);
+        reg_button_join_us  = findViewById(R.id.reg_button_join_us);
+        reg_result_et       = findViewById(R.id.reg_result_et);
+        reg_num_et          = findViewById(R.id.reg_num_et);
 
         reg_button_join_us.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                reg_result_et.setText("");
+                Double valor = Double.parseDouble( reg_num_et.getText().toString());
+
+                reg_result_et.setText(new Extenso(valor).toString());
+
             }
         });
     }

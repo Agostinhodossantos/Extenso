@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
@@ -95,7 +96,7 @@
                         android:layout_marginBottom="@dimen/margin_bottom_8"
                         android:layout_gravity="start"
                         android:fontFamily="sans-serif-regular"
-                        android:text="Welcome !" />
+                        android:text="Bem vindo !" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -108,7 +109,7 @@
                         android:layout_gravity="start"
                         android:lineSpacingExtra="@dimen/lineSpacingExtra_4"
                         android:fontFamily="sans-serif-light"
-                        android:text="We just need to get a few details from you to get you signed up  to the service." />
+                        android:text="Cria um aplicativo (flutter) que converte um Número por Extenso." />
 
 
                     <!--Name Details-->
@@ -123,7 +124,7 @@
                         android:drawableLeft="@drawable/ic_speaker_notes_black_24dp"
                         android:drawablePadding="@dimen/padding_8"
                         android:hint="Numero"
-                        android:inputType="text"
+                        android:inputType="numberDecimal"
                         android:maxLength="30"
                         android:maxLines="1"
                         android:padding="@dimen/padding_16"
